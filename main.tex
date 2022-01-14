@@ -1,3 +1,17 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.3, 10 May 2020) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+% This fork/modified version has been made by Nicolás Omar González Passerino (nicolas.passerino@gmail.com, 15 Oct 2020)
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
 %% If you need to pass whatever options to xcolor
 \PassOptionsToPackage{dvipsnames}{xcolor}
 
@@ -38,35 +52,35 @@
 \fi
 
 % ----- LIGHT MODE -----
-%\definecolor{SlateGrey}{HTML}{2E2E2E}
-%\definecolor{LightGrey}{HTML}{666666}
-%\definecolor{PrimaryColor}{HTML}{001F5A}
-%\definecolor{SecondaryColor}{HTML}{0039AC}
-%\definecolor{ThirdColor}{HTML}{F3890B}
-%\definecolor{BackgroundColor}{HTML}{E2E2E2}
-%\colorlet{name}{PrimaryColor}
-%\colorlet{tagline}{PrimaryColor}
-%\colorlet{heading}{PrimaryColor}
-%\colorlet{headingrule}{ThirdColor}
-%\colorlet{subheading}{SecondaryColor}
-%\colorlet{accent}{SecondaryColor}
-%\colorlet{emphasis}{SlateGrey}
-%\colorlet{body}{LightGrey}
-%\pagecolor{BackgroundColor}
-% ----- DARK MODE -----
-\definecolor{BackgroundColor}{HTML}{242424}
-\definecolor{SlateGrey}{HTML}{6F6F6F}
-\definecolor{LightGrey}{HTML}{ABABAB}
-\definecolor{PrimaryColor}{HTML}{3F7FFF}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{PrimaryColor}{HTML}{001F5A}
+\definecolor{SecondaryColor}{HTML}{0039AC}
+\definecolor{ThirdColor}{HTML}{F3890B}
+\definecolor{BackgroundColor}{HTML}{E2E2E2}
 \colorlet{name}{PrimaryColor}
 \colorlet{tagline}{PrimaryColor}
 \colorlet{heading}{PrimaryColor}
-\colorlet{headingrule}{PrimaryColor}
-\colorlet{subheading}{PrimaryColor}
-\colorlet{accent}{PrimaryColor}
-\colorlet{emphasis}{LightGrey}
+\colorlet{headingrule}{ThirdColor}
+\colorlet{subheading}{SecondaryColor}
+\colorlet{accent}{SecondaryColor}
+\colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
 \pagecolor{BackgroundColor}
+% ----- DARK MODE -----
+%\definecolor{BackgroundColor}{HTML}{242424}
+%\definecolor{SlateGrey}{HTML}{6F6F6F}
+%\definecolor{LightGrey}{HTML}{ABABAB}
+%\definecolor{PrimaryColor}{HTML}{3F7FFF}
+%\colorlet{name}{PrimaryColor}
+%\colorlet{tagline}{PrimaryColor}
+%\colorlet{heading}{PrimaryColor}
+%\colorlet{headingrule}{PrimaryColor}
+%\colorlet{subheading}{PrimaryColor}
+%\colorlet{accent}{PrimaryColor}
+%\colorlet{emphasis}{LightGrey}
+%\colorlet{body}{LightGrey}
+%\pagecolor{BackgroundColor}
 
 % Change some fonts, if necessary
 \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
@@ -91,10 +105,10 @@
     \personalinfo{
         \email{ehanlon19@gmail.com}\smallskip
         \phone{+01-408-607-7715}
-        \location{Morgan Hill, CA}\\
+        \location{San Francisco, CA}\\
         \linkedin{in/ethan-hanlon-6688491a6/}
         \github{OccultSlolem}
-        %\homepage{nicolasomar.me}
+        \homepage{https://ethan-hanlon.xyz}
         %\medium{nicolasomar}
         %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
         % \orcid{0000-0000-0000-0000}
@@ -119,22 +133,20 @@
     \begin{paracol}{2}
         % ----- STRENGTHS -----
         \cvsection{Strengths}
-            \cvtag{Java}
             \cvtag{Swift}
+            \cvtag{Java}
             \cvtag{SwiftUI}
-            \cvtag{Python}
             \cvtag{Git}
             \cvtag{Web hosting}
-            \cvtag{Lua}
+            \cvtag{Angular}
             \cvtag{Firebase}
         % ----- STRENGTHS -----
 
         % ----- LEARNING -----
-        \cvsection{Learning}
-            \cvtag{UI}
-            \cvtag{UX}
-            \cvtag{Webapps}
-            \cvtag{JavaScript}
+        % \cvsection{Learning}
+        %     \cvtag{UI}
+        %     \cvtag{UX}
+        %     \cvtag{React}
         % ----- LEARNING -----
 
         % ----- MOST PROUD -----
@@ -201,7 +213,18 @@
         % ----- EDUCATION -----
 
         % ----- PROJECTS -----
+
+
+
+        % ----- PROJECTS -----
+
         \cvsection{Projects}
+            \cvevent{PediaTrac}{\cvrepo{| \faGithub}{https://github.com/OccultSlolem/PediaTrac-iOS}}{}{}            \begin{itemize}
+                \item SF Hacks Hackathon Project
+                \item Uses Firebase to store user data
+                \item Recommends pediatric and vaccine appointments based on the age of children
+            \end{itemize}
+
             \cvevent{FRC Robot Code }{\cvrepo{| \faGithub}{https://github.com/Nuts-Bolts-FRC-7528/}\cvrepo{| \faGlobe}{https://liveoakrobotics.org/}}{Jan 2019 -- March 2020}{}
             \begin{itemize}
                 \item Led programming team through 2019 and 2020 FRC Seasons
@@ -209,11 +232,6 @@
             \end{itemize}
             \divider
 
-        \cvevent{Mosaic OT Website }{\cvrepo{| \faGithub}{https://github.com/OccultSlolem/MosaicOT-Website}\cvrepo{| \faGlobe}{https://mosaicot.com/}}{Sept 2020 -- Ongoing}{}            \begin{itemize}
-                \item Hosting the website of Mosaic Occupational Therapy using Microsoft Azure
-                \item Used Adobe Dreamweaver to create static website source files
-                \item Used Cloudflare and HSTS Preload to ensure transmission is private and secure at all times
-            \end{itemize}
-        % ----- PROJECTS -----
+
     \end{paracol}
 \end{document}
