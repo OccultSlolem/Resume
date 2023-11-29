@@ -52,35 +52,35 @@
 \fi
 
 % ----- LIGHT MODE -----
-\definecolor{SlateGrey}{HTML}{2E2E2E}
-\definecolor{LightGrey}{HTML}{666666}
-\definecolor{PrimaryColor}{HTML}{001F5A}
-\definecolor{SecondaryColor}{HTML}{0039AC}
-\definecolor{ThirdColor}{HTML}{F3890B}
-\definecolor{BackgroundColor}{HTML}{E2E2E2}
+% \definecolor{SlateGrey}{HTML}{2E2E2E}
+% \definecolor{LightGrey}{HTML}{666666}
+% \definecolor{PrimaryColor}{HTML}{001F5A}
+% \definecolor{SecondaryColor}{HTML}{0039AC}
+% \definecolor{ThirdColor}{HTML}{F3890B}
+% \definecolor{BackgroundColor}{HTML}{E2E2E2}
+% \colorlet{name}{PrimaryColor}
+% \colorlet{tagline}{PrimaryColor}
+% \colorlet{heading}{PrimaryColor}
+% \colorlet{headingrule}{ThirdColor}
+% \colorlet{subheading}{SecondaryColor}
+% \colorlet{accent}{SecondaryColor}
+% \colorlet{emphasis}{SlateGrey}
+% \colorlet{body}{LightGrey}
+% \pagecolor{BackgroundColor}   
+% ----- DARK MODE -----
+\definecolor{BackgroundColor}{HTML}{242424}
+\definecolor{SlateGrey}{HTML}{6F6F6F}
+\definecolor{LightGrey}{HTML}{ABABAB}
+\definecolor{PrimaryColor}{HTML}{3F7FFF}
 \colorlet{name}{PrimaryColor}
 \colorlet{tagline}{PrimaryColor}
 \colorlet{heading}{PrimaryColor}
-\colorlet{headingrule}{ThirdColor}
-\colorlet{subheading}{SecondaryColor}
-\colorlet{accent}{SecondaryColor}
-\colorlet{emphasis}{SlateGrey}
+\colorlet{headingrule}{PrimaryColor}
+\colorlet{subheading}{PrimaryColor}
+\colorlet{accent}{PrimaryColor}
+\colorlet{emphasis}{LightGrey}
 \colorlet{body}{LightGrey}
 \pagecolor{BackgroundColor}
-% ----- DARK MODE -----
-%\definecolor{BackgroundColor}{HTML}{242424}
-%\definecolor{SlateGrey}{HTML}{6F6F6F}
-%\definecolor{LightGrey}{HTML}{ABABAB}
-%\definecolor{PrimaryColor}{HTML}{3F7FFF}
-%\colorlet{name}{PrimaryColor}
-%\colorlet{tagline}{PrimaryColor}
-%\colorlet{heading}{PrimaryColor}
-%\colorlet{headingrule}{PrimaryColor}
-%\colorlet{subheading}{PrimaryColor}
-%\colorlet{accent}{PrimaryColor}
-%\colorlet{emphasis}{LightGrey}
-%\colorlet{body}{LightGrey}
-%\pagecolor{BackgroundColor}
 
 % Change some fonts, if necessary
 \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
@@ -101,9 +101,9 @@
     \tagline{Computer Science Student}
     %% You can add multiple photos on the left or right
     \photoL{4cm}{headshot.jpeg}
-
+    
     \personalinfo{
-        \email{ehanlon19@gmail.com}\smallskip
+        \email{me@ethan-hanlon.xyz}\smallskip
         \phone{+01-408-607-7715}
         \location{San Francisco, CA}\\
         \linkedin{in/ethan-hanlon-6688491a6/}
@@ -120,11 +120,11 @@
         % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
         % \gitlab{your_id}
     }
-
+    
     \makecvheader
     %% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
     % \AtBeginEnvironment{itemize}{\small}
-
+    
     %% Set the left/right column width ratio to 6:4.
     \columnratio{0.25}
 
@@ -133,34 +133,37 @@
     \begin{paracol}{2}
         % ----- STRENGTHS -----
         \cvsection{Strengths}
+            \cvtag{Type/JavaScript}
             \cvtag{Swift}
             \cvtag{Java}
-            \cvtag{SwiftUI}
+            \cvtag{SvelteKit}
+            \cvtag{React}
             \cvtag{Git}
-            \cvtag{Web hosting}
-            \cvtag{Angular}
-            \cvtag{Firebase}
+            \cvtag{Python}
+            \cvtag{Cloud}
+            \cvtag{Leadership Experience}
+            \cvtag{Life Scout. BSA}
         % ----- STRENGTHS -----
-
+        
         % ----- LEARNING -----
         % \cvsection{Learning}
         %     \cvtag{UI}
         %     \cvtag{UX}
         %     \cvtag{React}
         % ----- LEARNING -----
-
+        
         % ----- MOST PROUD -----
         % \cvsection{Most Proud of}
-
+        
         % \cvachievement{\faTrophy}{Fantastic Achievement}{and some details about it}\\
         % \divider
         % \cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}\\
         % \divider
         % \cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
         % ----- MOST PROUD -----
-
+        
         % \cvsection{A Day of My Life}
-
+        
         % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
         % \wheelchart{outer radius}{inner radius}{
         % comma-separated list of value/text width/color/detail}
@@ -171,67 +174,92 @@
         %   2/10em/accent/Sports and relaxation,
         %   5/6em/accent!20/Spending time with family
         % }
-
+        
         % use ONLY \newpage if you want to force a page break for
         % ONLY the current column
         \newpage
-
+        
         %% Switch to the right column. This will now automatically move to the second
         %% page if the content is too long.
         \switchcolumn
         % ----- ABOUT ME -----
-
+        
         % ----- EXPERIENCE -----
         \cvsection{Experience}
-        \cvevent{Innovation Entrepeneurship Fellowship Candidate }{| SFSU}{Sept 2020 -- Ongoing}{San Francisco, CA}
+            \cvevent{ Software/EE Internship }{| Towa Industries, Inc.}{July 2022 - Ongoing}{Campbell, CA}
             \begin{itemize}
-                \item Received capital and mentorship to start business
-                \item Started app-based business that helps you find political candidates you like
-                \item Wrote iOS SwiftUI app and published on App Store
+                \item Played roles in software engineering, manufacturing, and testing operations.
+                \item Programmed company shop and management system (https://shop.towatools.com) from scratch that has processed \$12k in transactions
+        % \cvevent{Innovation Entrepeneurship Fellowship Candidate }{| SFSU}{Sept 2020 -- Ongoing}{San Francisco, CA}
+          %  \begin{itemize}
+           %     \item Received capital and mentorship to start business
+            %    \item Started app-based business that helps you find political candidates you like
+             %   \item Wrote iOS SwiftUI app and published on App Store
+            %\end{itemize}
             \end{itemize}
             \divider
-
-            \cvevent{Founder and President }{| Live Oak High School Robotics Team}{Aug 2018 -- June 2020}{Morgan Hill, CA}
+            \cvevent{ Front Desk Receptionist }{| Morgan Hill Bowl}{May 2021 - August 2022}{Morgan Hill, CA}
             \begin{itemize}
-                \item Founded FRC Team 7528 at Live Oak High School and led software team throughout tenure
-                \item Raised tens of thousands of dollars through grants from NASA, Cisco, and others
-                \item Won Rookie All-Star Award in March 2019 and took team to World Championships in Houston
+                \item Sold lanes, handled cash, assisted with cleaning, and provided customer service.
             \end{itemize}
-
+            % \cvevent{ Fellow }{| California College Corps}{October 2022 - Ongoing}{San Francisco, CA}
+            % \begin{itemize}
+            %     \item Committed four hundred hours of community service through current academic year
+            %     \item Assigned to Alemany Farm, assisting the community through growing free food
+            % \end{itemize}
+            
+            %\cvevent{Founder and President }{| Live Oak High School Robotics Team}{Aug 2018 -- June 2020}{Morgan Hill, CA}
+            %\begin{itemize}
+                %\item Founded FRC Team 7528 at Live Oak High School and led software team throughout tenure
+                %\item Raised tens of thousands of dollars through grants from NASA, Cisco, and others
+                %\item Won Rookie All-Star Award in March 2019 and took team to World Championships in Houston
+            %\end{itemize}
+            
         % ----- EXPERIENCE -----
-
+        
         % ----- EDUCATION -----
         \cvsection{Education}
             \cvevent{B.S.\ Computer Science }{| San Francisco State University}{Aug 2020 -- Ongoing}{San Francisco, CA}
+            \begin{itemize}
+                \item Chief Technology Officer of Fog City Rocketry. Created divisions for mechanical, avionics, and chemical with independent leadership to solve problems with efficient teamwork.
+            \end{itemize}
             \divider
-
+            
             \cvevent{High School Diploma }{| Live Oak High School}{Aug 2016 -- June 2020}{Morgan Hill, CA}
             \begin{itemize}
-                \item Won awards for top performance in Robotics, Winter Guard, and Marching Band
-                \item Went to world championship for Winter Guard International and FIRST Robotics Competition
+                \item Won awards for top performance in Robotics, Winter Guard, and Marching Band.
+                \item Founded the school's FIRST Robotics Competition team, which is still active today.
+                \item Went to world championship for Winter Guard International and FIRST Robotics Competition.
             \end{itemize}
         % ----- EDUCATION -----
-
+        
         % ----- PROJECTS -----
-
-
-
+        
+            
+        
         % ----- PROJECTS -----
-
+        
         \cvsection{Projects}
-            \cvevent{PediaTrac}{\cvrepo{| \faGithub}{https://github.com/OccultSlolem/PediaTrac-iOS}}{}{}            \begin{itemize}
-                \item SF Hacks Hackathon Project
-                \item Uses Firebase to store user data
-                \item Recommends pediatric and vaccine appointments based on the age of children
+            \cvevent{Towa Shop}
+            {\cvrepo{| \faGlobe}{https://shop.towatools.com}}{July 2023 -- Present}{}
+            \begin{itemize}
+                \item Approx 15k SLOC system that manages frontend, database, payment, email, and order management.
+                \item Processed more than \$12K USD of transactions.
             \end{itemize}
-
+            % \cvevent{PediaTrac}{\cvrepo{| \faGithub}{https://github.com/OccultSlolem/PediaTrac-iOS}}{}{}            \begin{itemize}
+            %     \item SF Hacks Hackathon Project
+            %     \item Uses Firebase to store user data
+            %     \item Recommends pediatric and vaccine appointments based on the age of children
+            % \end{itemize}
+        
             \cvevent{FRC Robot Code }{\cvrepo{| \faGithub}{https://github.com/Nuts-Bolts-FRC-7528/}\cvrepo{| \faGlobe}{https://liveoakrobotics.org/}}{Jan 2019 -- March 2020}{}
             \begin{itemize}
+                \item Founded FRC Robotics Team (\#7528), raised tens of thousands of dollars through organizations like NASA and Cisco.
                 \item Led programming team through 2019 and 2020 FRC Seasons
-                \item Used OpenCV and Limelight technologies to find key game objects
+                \item Used OpenCV and Limelight technologies to find key game objects.
             \end{itemize}
             \divider
-
-
+            
+            
     \end{paracol}
 \end{document}
