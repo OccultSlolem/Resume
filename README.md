@@ -1,9 +1,5 @@
-# Resume-LaTeX
+# Resume
 
-### I just want your resume ###
+You can find my resume under "EFH Resume.pdf."
 
-Use HanlonCV.pdf or HanlonCVDarkTheme.pdf. They're the same content-wise, just the colors are different.
-
-### I'm interested in the source code ###
-
-Start at main.tex.
+If you're interested in connecting with me, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/ethan-hanlon-6688491a6/) or [by email](mailto:me@ethan-hanlon.xyz)!
